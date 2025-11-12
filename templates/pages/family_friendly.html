@@ -1,0 +1,154 @@
+{% extends 'base.html' %} 
+<!--block title-->
+{% block title %} | About {% endblock title %}
+{% block content %} {% load static %}
+    
+    <section id="showcase-inner" class="py-5 text-white">
+    <div class="container">
+        <div class="row text-center">
+        <div class="col-md-12">
+            <h1 class="display-4">Family-Friendly Room 歡樂型房間</h1>
+            <p class="lead">
+            "Where journeys begin, and memories stay. 旅程從這裡開始, 回憶永遠留在心中."
+            </p>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <!--
+    <section id="bc" class="mt-3">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+            {% comment %} (DONE)fix index.html {% endcomment %}
+            <a href={% url 'pages:index' %} > <i class="fas fa-home"></i> Home</a>
+            </li>
+            <li class="breadcrumb-item active">About</li>
+        </ol>
+        </nav>
+    </div>
+    </section>
+-->
+    <section id="about" class="py-4">
+    <div class="container">
+        <div class="row">
+        <div class="col-md-8">
+            {% comment %} (DONE)fix image {% endcomment %}
+            <img src={% static 'img/family_friendly.png' %} alt="" />
+            <h2>
+            Family adventures start with the right space—and our family-friendly rooms are built for joy, comfort, and togetherness. Spacious layouts, multiple beds, and kid-friendly amenities make these rooms ideal for vacationing households. Whether you're exploring Hong Kong’s attractions or relaxing after a day out, everyone has room to breathe and bond. Safety, convenience, and warmth are at the heart of our design. At LI JING Hostel, we welcome your whole family with open arms.
+            </h2>
+            <p class="lead">
+            
+            </p>
+            
+            <h2>
+            家庭旅程從合適的空間開始。LI JING Hostel 的家庭型房間寬敞舒適，設有多張床及適合兒童的設施，讓一家大小都能盡情享受假期。無論是探索香港景點，或在外出後放鬆休息，這裡都能提供足夠空間，讓家人彼此聯繫、共享歡樂。安全、便利與溫馨是我們設計的核心。LI JING Hostel 熱誠歡迎您的全家到來。
+            </h2>
+            <!--
+            <p class="mt-4" style="font-size: 20px;">
+            Established in July 2005, LI JING Hostel is a non-profit organization dedicated to providing affordable short-term accommodation for both local and international travelers. With a vision of “Where journeys begin, and memories stay,” we strive to offer more than just a place to sleep—we aim to be a welcoming gateway to Hong Kong and beyond. Our mission is rooted in hospitality, accessibility, and cultural connection.
+            </p>
+            <p class="mt-4" style="font-size: 20px;">
+            Today, LI JING Hostel proudly operates ten hostels across Hong Kong, each designed to offer comfort, convenience, and community. Whether you're a solo backpacker, a family on vacation, or a business traveler, our hostels provide a safe and budget-friendly environment tailored to your needs. By supporting short-term stays, we also contribute to the vitality of Hong Kong’s local economy and promote regional tourism.
+            </p>
+            <p class="mt-4" style="font-size: 20px;">
+            Our services extend beyond accommodation. We offer three value-added services to enhance your stay: consulting services that provide insider tips on shopping, dining, and sightseeing; rental services for essential items like notebooks, computer accessories, and phone chargers; and assistance with High Speed Rail (HSR) ticket booking for guests planning to visit nearby cities such as Shenzhen, Macau, and Guangzhou. These offerings are designed to make your travel experience seamless and enjoyable.
+            </p>
+            <p class="mt-4" style="font-size: 20px;">
+            Whether you're exploring Hong Kong for the first time or using it as a base to discover the Guangdong-Hong Kong-Macao Greater Bay Area, LI JING Hostel is here to support your journey. We invite you to experience the warmth of our service, the richness of our city, and the comfort of a place where every journey begins—and every memory stays.
+            </p>
+            <p class="mt-4" style="font-size: 20px;">
+            LI JING Hostel 成立於 2005 年 7 月，是一間非牟利機構，致力為本地及海外旅客提供可負擔的短期住宿服務。本宿舍秉持「旅程從這裡開始，回憶永遠留在心中」的願景，不僅提供住宿，更希望成為旅客探索香港及周邊地區的溫馨起點。我們的使命是推動款待文化、促進可及性，並加強文化交流。
+            </p>
+            <p class="mt-4" style="font-size: 20px;">
+            目前，LI JING Hostel 在香港營運十間宿舍，每一間都致力提供舒適、便利及社群感的住宿環境。無論您是獨自背包旅行、家庭度假，或是商務出差，我們的宿舍都能為您提供安全且經濟實惠的選擇。同時，我們亦透過支持短期住宿，積極促進香港本地經濟及地區旅遊發展。
+            </p>
+            <p class="mt-4" style="font-size: 20px;">
+            除了基本住宿服務外，我們還提供三項增值服務：一是諮詢服務，為旅客提供購物、美食及觀光等本地資訊；二是租借服務，提供筆記型電腦、電腦配件及手機充電器等必需品；三是高鐵車票代訂服務，協助旅客前往深圳、澳門及廣州等鄰近城市。這些服務旨在讓您的旅程更順暢、更愉快。
+            </p>
+            <p class="mt-4" style="font-size: 20px;">
+            無論您是首次探索香港，或是以香港為基地前往粵港澳大灣區，LI JING Hostel 都是您旅程中的堅實後盾。誠邀您體驗我們的熱誠服務、感受城市的魅力，並在這裡留下屬於您的美好回憶。
+            </p>
+        -->
+        </div>
+        <!--
+        <div class="col-md-4">
+            {% if mvp_doctors %}
+            {% for doctor in mvp_doctors %}
+            <div class="card">
+            {% comment %} fix image {% endcomment %}
+            <img
+                class="card-img-top"
+                src={{doctor.photo.url}}
+                alt="Doctor of the month"
+            />
+            <div class="card-body">
+                <h5 class="card-title">Top Hostel Staff Member</h5>
+                <h6 class="text-secondary">{{doctor.name}}</h6>
+                <p class="card-text">
+                {{doctor.description}}
+                </p>
+            </div>
+            </div>
+            {% endfor %}
+            {% endif %}
+        </div>
+    -->
+        </div>
+    </div>
+    </section>
+
+    <!-- Work -->
+    <!--
+    <section id="work" class="bg-dark text-white text-center">
+    <h2>"In the relentless grind of the range, a well-timed break is what keeps a cowboy in the saddle for the long ride. 在無止境的奔波中，一次適時的休息，是牛仔能夠長途騎乘、堅持到底的關鍵。" by Waddie Mitchell</h2>
+    <h4>
+        Waddie Mitchell is a former buckaroo and celebrated cowboy poet.
+    </h4>
+    <hr />
+    {% comment %} fix listings.html {% endcomment %}
+    <a href={% url 'listings:listings' %} class="btn btn-secondary text-white btn-lg"
+        >View Our Featured Hostels</a
+    >
+    </section>
+-->
+    <!-- Team -->
+    <!--
+    <section id="team" class="py-5">
+    <div class="container">
+        <h2 class="text-center pb-4">Our Team</h2>
+        <div class="row text-center">
+        {% if doctors %}
+        {% for doctor in doctors %}
+        <div class="col-md-4">
+            {% comment %} fix image {% endcomment %}
+            <img
+            src={{doctor.photo.url}}
+            alt=""
+            class="rounded-circle mb-3 img-fluid"
+            style="object-fit: cover; width: 300px; height: 300px"
+            />
+            <h4>{{doctor.name}}</h4>
+            <p class="text-success">
+            <i class="fas fa-award text-success"></i> Hostel Manager
+            </p>
+            <hr />
+            <p><i class="fas fa-phone"></i> {{doctor.phone}}</p>
+            <p><i class="fas fa-envelope-open"></i> {{doctor.email}}</p>
+        </div>
+        {% endfor %}
+        {% else %}
+        <div class="col-md-12">
+            <h2>No Hostel Manager Available - We are hiring</h2>
+        </div>
+        {% endif %}
+        
+        </div>
+    </div>
+    </section>
+-->
+{% endblock %}

@@ -1,0 +1,55 @@
+{% extends 'base.html' %} 
+<!--block title-->
+{% block title %} | About {% endblock title %}
+{% block content %} {% load static %}
+    
+    <section id="showcase-inner" class="py-5 text-white">
+    <div class="container">
+        <div class="row text-center">
+        <div class="col-md-12">
+            <h1 class="display-4">Disclaimer 免責聲明</h1>
+            <p class="lead">
+            "Where journeys begin, and memories stay. 旅程從這裡開始, 回憶永遠留在心中."
+            </p>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="about" class="py-4">
+    <div class="container">
+        <div class="row">
+        <div class="col-md-8">
+            <h2>
+            LI JING Hostel strives to provide accurate and up-to-date information on this website. However, 
+            all content—including room descriptions, service details, pricing, and availability—is provided 
+            for general reference only and may be subject to change without prior notice. While we make every 
+            effort to ensure the reliability of our services, we do not guarantee uninterrupted access, 
+            error-free content, or the completeness of external links. Guests are encouraged to confirm details 
+            directly with our staff before making travel or booking decisions. LI JING Hostel shall not be held 
+            liable for any loss, inconvenience, or damages arising from the use of this website or reliance on 
+            its content. By accessing this site, you agree to use the information at your own discretion and risk.
+            </h2>
+            
+            <p class="lead">
+            
+            </p>
+            <!--
+            {% comment %} (DONE)fix image {% endcomment %}
+            <img src={% static 'img/romantic_style.png' %} alt="" />
+            -->
+            <h2>
+            LI JING Hostel 致力於提供準確及最新的網站資訊。然而，網站上所載之房型介紹、服務內容、價格及供應情況僅供參考，並可能在
+            未有預先通知下作出更改。本宿舍雖已盡力確保服務資訊的可靠性，但不保證網站內容無誤、不中斷或外部連結的完整性。旅客在作出
+            預訂或行程安排前，應直接向本宿舍職員確認相關資料。LI JING Hostel 對因使用本網站或依賴其內容所引致的任何損失、不便或
+            損害概不負責。使用本網站即表示您同意自行承擔風險並審慎使用相關資訊。
+            </h2>
+            
+        </div>
+        
+        </div>
+    </div>
+    </section>
+
+    
+{% endblock %}

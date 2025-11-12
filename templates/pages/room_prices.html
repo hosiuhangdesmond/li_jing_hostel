@@ -1,0 +1,78 @@
+{% extends 'base.html' %} 
+<!--block title-->
+{% block title %} | About {% endblock title %}
+{% block content %} {% load static %}
+    
+    <section id="showcase-inner" class="py-5 text-white">
+    <div class="container">
+        <div class="row text-center">
+        <div class="col-md-12">
+            <h1 class="display-4">Latest Room Prices 最新房價</h1>
+            <p class="lead">
+            (As at 截至： 2025-11-06)
+            </p>
+            <p class="lead">
+            "Where journeys begin, and memories stay. 旅程從這裡開始, 回憶永遠留在心中."
+            </p>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="about" class="py-4">
+    <div class="container">
+        <div class="row">
+        <div class="col-md-8">
+            {% comment %} (DONE)fix image {% endcomment %}
+            <img src={% static 'img/room_prices.png' %} alt="" />
+            <h2>
+            Room Pricing Information
+            </h2>
+            
+            <p class="lead">
+            At LI JING Hostel, we offer four distinct room types to suit your travel needs. Our Office-Style 
+            and Study-Focused rooms are available at <span style="color: blue; font-weight: bold;">HK$499 per day</span>, ideal for business travelers and students 
+            seeking a productive environment. For those planning a romantic getaway or a family vacation, our 
+            Romantic-Style and Family-Friendly rooms are priced at <span style="color: blue; font-weight: bold;">HK$999 per day</span>, offering spacious comfort and 
+            thoughtful amenities.
+            </p>
+            <p class="lead">
+            Please note that the above rates apply to room rental only. In addition, each guest or occupant—regardless 
+            of age, gender, or other personal attributes—is charged a fixed rate of <span style="color: blue; font-weight: bold;">HK$299 per day</span>. This ensures fair 
+            and consistent service across all bookings.
+            </p>
+            <p class="lead">
+            Charges for rental services such as notebooks, computer accessories, phone chargers, and other optional 
+            items are not included in the room or guest fees. These services are available upon request and billed 
+            separately.
+            </p>
+            <p class="lead">
+            We encourage guests to review all pricing details before booking to ensure a smooth and transparent 
+            experience. LI JING Hostel is committed to providing affordable, high-quality accommodation for every 
+            traveler.
+            </p>
+            <h2>
+            房價資訊
+            </h2>
+            <p class="lead">
+            LI JING Hostel 提供四種房型，滿足不同旅客的需要。辦公室型及專注型房間<span style="color: blue; font-weight: bold;">每日租金為 HK$499</span>，適合商務人士及學生使用。
+            浪漫型及家庭型房間則<span style="color: blue; font-weight: bold;">每日收費 HK$999</span>，空間寬敞，設施貼心，適合情侶或家庭入住。
+            </p>
+            <p class="lead">
+            上述價格僅包括房間租金。另每位住客（無論年齡、性別或其他個人特徵）均需支付 <span style="color: blue; font-weight: bold;">每日 HK$299 的固定費用</span>，以確保服務公平一致。
+            </p>
+            <p class="lead">
+            此外，租借服務（如筆記型電腦、電腦配件、手機充電器等）並不包含在房租或住客費用內。此類服務可按需提供，並另行收費。
+            </p>
+            <p class="lead">
+            我們建議旅客在預訂前詳細了解所有收費項目，以確保住宿過程順暢透明。LI JING Hostel 致力為每位旅客提供高質素且可負擔的住宿選擇。
+            </p>
+
+        </div>
+        
+        </div>
+    </div>
+    </section>
+
+    
+{% endblock %}
