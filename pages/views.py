@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from listings.models import Listing
-from doctors.models import Doctor
+from managers.models import Manager
 from listings.choices import district_choices, room_choices, rooms_choices
 #from django.http import HttpResponse
 # Create your views here.
@@ -15,11 +15,11 @@ def index(request):
     return render(request, 'pages/index.html', context)
 
 def about(request):
-    doctors = Doctor.objects.order_by("-hire_date")[:3]
-    mvp_doctors = Doctor.objects.all().filter(is_mvp=True)
+    managers = Manager.objects.order_by("-hire_date")[:3]
+    mvp_managers = Manager.objects.all().filter(is_mvp=True)
     context = {
-        "doctors": doctors,
-        "mvp_doctors": mvp_doctors
+        "managers": managers,
+        "mvp_managers": mvp_managers
     }
     return render(request, 'pages/about.html', context)
 

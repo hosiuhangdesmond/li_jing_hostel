@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     'debug_toolbar',
     'pages.apps.PagesConfig',
     'listings.apps.ListingsConfig',
-    'doctors.apps.DoctorsConfig',
+    'managers.apps.ManagersConfig',
     'taggit',
     'accounts.apps.AccountsConfig',
     'contacts.apps.ContactsConfig',

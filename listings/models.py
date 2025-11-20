@@ -1,6 +1,6 @@
 from django.db import models
 from datetime import datetime
-from doctors.models import Doctor
+from managers.models import Manager
 from .choices import district_choices, room_choices, rooms_choices
 from taggit.managers import TaggableManager
 # Create your models here.
@@ -11,7 +11,7 @@ class Subject(models.Model):
         return self.name
 
 class Listing(models.Model):
-    doctor = models.ForeignKey(Doctor, on_delete=models.DO_NOTHING)
+    manager = models.ForeignKey(Manager, on_delete=models.DO_NOTHING)
     title = models.CharField(max_length=200)
     address = models.CharField(max_length=200)
     district = models.CharField(max_length=50, choices=district_choices.items())

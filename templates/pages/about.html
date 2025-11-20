@@ -70,20 +70,20 @@
             </p>
           </div>
           <div class="col-md-4">
-            {% if mvp_doctors %}
-            {% for doctor in mvp_doctors %}
+            {% if mvp_managers %}
+            {% for manager in mvp_managers %}
             <div class="card">
               {% comment %} fix image {% endcomment %}
               <img
                 class="card-img-top"
-                src={{doctor.photo.url}}
-                alt="Doctor of the month"
+                src={{manager.photo.url}}
+                alt="Manager of the month"
               />
               <div class="card-body">
                 <h5 class="card-title">Top Hostel Staff Member</h5>
-                <h6 class="text-secondary">{{doctor.name}}</h6>
+                <h6 class="text-secondary">{{manager.name}}</h6>
                 <p class="card-text">
-                {{doctor.description}}
+                {{manager.description}}
                 </p>
               </div>
             </div>
@@ -112,23 +112,23 @@
       <div class="container">
         <h2 class="text-center pb-4">Our Team</h2>
         <div class="row text-center">
-          {% if doctors %}
-          {% for doctor in doctors %}
+          {% if managers %}
+          {% for manager in managers %}
           <div class="col-md-4">
             {% comment %} fix image {% endcomment %}
             <img
-              src={{doctor.photo.url}}
+              src={{manager.photo.url}}
               alt=""
               class="rounded-circle mb-3 img-fluid"
               style="object-fit: cover; width: 300px; height: 300px"
             />
-            <h4>{{doctor.name}}</h4>
+            <h4>{{manager.name}}</h4>
             <p class="text-success">
               <i class="fas fa-award text-success"></i> Hostel Manager
             </p>
             <hr />
-            <p><i class="fas fa-phone"></i> {{doctor.phone}}</p>
-            <p><i class="fas fa-envelope-open"></i> {{doctor.email}}</p>
+            <p><i class="fas fa-phone"></i> {{manager.phone}}</p>
+            <p><i class="fas fa-envelope-open"></i> {{manager.email}}</p>
           </div>
           {% endfor %}
           {% else %}

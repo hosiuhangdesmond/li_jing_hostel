@@ -32,12 +32,8 @@
             {% comment %} (DONE)fix about.html {% endcomment %}
               <a class="nav-link" href={% url "pages:about" %} >About</a>
             </li>
-            <li {% if 'listings' in request.path %} class="nav-item mr-3 active" {% else %} class="nav-item mr-3" {% endif %}
-
-            >
-            <!-- wrong
-            <li class="nav-item mr-3">
-          -->
+            <li {% if 'listings' in request.path %} class="nav-item mr-3 active" {% else %} class="nav-item mr-3" {% endif %}>
+            
             {% comment %} (DONE)fix listings.html {% endcomment %}
               <a class="nav-link" href={% url "listings:listings" %}
                 >Hostel services</a
@@ -100,8 +96,7 @@
               <a class="nav-link" href={% url 'accounts:login' %}>
                 <i class="fas fa-sign-in-alt"></i>
 
-                Login</a
-              >
+                Login</a>
             </li>
             {% endif %}
           </ul>

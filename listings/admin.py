@@ -16,7 +16,7 @@ class ListingAdminForm(forms.ModelForm):
     class Meta:
         model = Listing
         fields = [
-            'doctor', 'title', 'address', 'district', 'description',
+            'manager', 'title', 'address', 'district', 'description',
             'services', 'service', 'room_type', 'screen',
             'professionals', 'professional', 'rooms',
             'photo_main', 'photo_1', 'photo_2', 'photo_3',
@@ -28,11 +28,11 @@ class ListingAdminForm(forms.ModelForm):
 
 class ListingAdmin(admin.ModelAdmin):
     form = ListingAdminForm
-    list_display = 'id', 'title', 'district', 'is_published', 'rooms', 'doctor', 'tag_list', 'display_professionals'
+    list_display = 'id', 'title', 'district', 'is_published', 'rooms', 'manager', 'tag_list', 'display_professionals'
     list_display_links = 'id', 'title'
-    list_filter = ("doctor", 'services')
+    list_filter = ("manager", 'services')
     list_editable = ("is_published", "rooms")
-    search_fields = ('title', 'district', 'doctor__name', "services__name", "professionals__name")
+    search_fields = ('title', 'district', 'manager__name', "services__name", "professionals__name")
     list_per_page = 25
     ordering = ['-id']
     # prepopulated_fields = {"title": ('title',)}
